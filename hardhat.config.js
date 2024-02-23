@@ -44,12 +44,9 @@ module.exports = {
   },
   etherscan:{
     apiKey:{
-      sepolia:`TFAFK1DJ4W2DI6DD214ZBH2Z69573WVE6Z`,
-      polygonMumbai:`JJK7VVHEAY87BNZS121HEP5KEDVVUQDJBA`,
-      polygon:`JJK7VVHEAY87BNZS121HEP5KEDVVUQDJBA`,
-      bscTestnet:'X33HZ34YY7APW2NCVFX394QNHEUE1QG89Z',
-      mainnet:'X33HZ34YY7APW2NCVFX394QNHEUE1QG89Z',
-
+      sepolia:process.env.SCAN_SEPOLIA,
+      polygonMumbai:process.env.SCAN_POLYGOMUMBAI,
+      polygon:process.env.SCAN_POLYGON,
     }
   }
 };

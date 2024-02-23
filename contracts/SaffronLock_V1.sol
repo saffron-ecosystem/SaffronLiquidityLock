@@ -24,11 +24,9 @@ contract SaffronLock_V1 is Initializable, OwnableUpgradeable,ReentrancyGuardUpgr
     uint256 public minDayLock;
     uint256 public maxDayLock;
 
-
     event Locked(uint256 indexed tokenId, address indexed owner,uint256 lockTime, uint256 unlockTime);
     event UnLocked(uint256 indexed tokenId, address indexed owner, uint256 time);
     
-
     event UpdateLocked(uint256 indexed tokenId, address indexed owner,uint256 o_checkpoint,uint o_start, uint256 o_unlockTime, uint n_start,uint256 n_unlockTime);
 
     function initialize(address initialOwner,address _nftContract) initializer public {
